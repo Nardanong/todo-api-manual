@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Assignment: Build a REST API for a Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <% { todos.map((el, index) => { %>
+            <h3>
+                <span> <%= index + 1 %>. </span><%= el.task %>
+                <span>
+                    <form action="/edit/<%= el.id %>">
+                        <button type="submit">Edit </button>
+                    </form>
+                </span>
+                <span>
+                    <form method="post" action="/delete/<%= el.id %>">
+                        <button class="button">Delete</button>
+                    </form>
+                </span>
+            </h3>
+    <% })} %>
+            <a href="/new">Create New Todo</a>
+    </div>
+    <div>
+</body>
+</html>
