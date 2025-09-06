@@ -29,6 +29,8 @@ npm install
 Install necessary dependencies:
 
 ```bash
+npm install
+npm install express 
 npm install express body-parser ejs
 ```
 
