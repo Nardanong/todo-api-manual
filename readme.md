@@ -1,5 +1,16 @@
 # Todo API Manual
 
+todo-api-manual/
+│── package.json
+│── server.js
+│── readme.md
+│── views/
+│    ├── edit.ejs
+     ├── index.ejs
+     ├── new.ejs
+│── public/
+     └── style.css
+
 ## Installation
 
 Clone the project
